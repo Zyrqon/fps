@@ -244,6 +244,7 @@ function updFx(dt){
 const BOT_COLORS=[0xc0392b,0xd35400,0x8e44ad,0x16a085];
 const raycaster=new THREE.Raycaster();
 let botSeq=1;
+const bots=new Map();
 const botParts=[]; // meshes for raycast, userData.botId
 function makeBot(id,x,z){
   const g=new THREE.Group();
